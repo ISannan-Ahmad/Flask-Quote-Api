@@ -1,4 +1,3 @@
-```markdown
 # Quote API
 
 A simple web application to manage quotes with CRUD operations (Create, Read, Update, Delete) using Flask and SQLAlchemy. This project allows users to view, add, update, and delete quotes.
@@ -184,4 +183,3 @@ This project is open-source and available under the [MIT License](LICENSE).
 ## Contact
 
 Feel free to reach out via GitHub Issues or email for any questions or suggestions.
-```
