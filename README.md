@@ -28,7 +28,7 @@ Follow these steps to get the project up and running locally.
 
 ```bash
 git clone https://github.com/ISannan-Ahmad/Flask-Quote-Api.git
-cd quote-api
+cd Flask-Quote-Api
 ```
 
 ### 2. Create a Virtual Environment
