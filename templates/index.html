@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -18,9 +18,63 @@
         </form>
         
         <button class="get-quote">Get Random Quote</button>
+        <button class="get-all-quotes">Get All Quotes</button>
+
+        <div id="all-quotes"></div>
     </div>
 
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quote API - Dark Theme</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white min-h-screen p-6">
+
+  <div class="max-w-3xl mx-auto space-y-8">
+    <!-- Header -->
+    <header class="text-center">
+      <h1 class="text-4xl font-bold mb-2">📜 Quote API</h1>
+      <p class="text-gray-400">A simple CRUD app for managing quotes</p>
+    </header>
+
+    <!-- Random Quote -->
+    <section class="bg-gray-800 p-6 rounded-xl shadow">
+      <h2 class="text-2xl font-semibold mb-4">Random Quote</h2>
+      <div id="quote" class="text-lg italic text-gray-300 mb-4">Loading...</div>
+      <button class="get-quote bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">Get New Quote</button>
+    </section>
+
+    <!-- All Quotes -->
+    <section class="bg-gray-800 p-6 rounded-xl shadow">
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="text-2xl font-semibold">All Quotes</h2>
+        <button class="get-all-quotes bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded">Load All Quotes</button>
+      </div>
+      <div id="all-quotes" class="space-y-4">
+        <!-- Quotes will appear here -->
+      </div>
+    </section>
+
+    <!-- Add Quote -->
+    <section class="bg-gray-800 p-6 rounded-xl shadow">
+      <h2 class="text-2xl font-semibold mb-4">Add a New Quote</h2>
+      <form id="quote-form" class="flex gap-4 flex-col sm:flex-row">
+        <input type="text" id="new-quote" placeholder="Enter a quote..." class="flex-1 p-2 rounded bg-gray-700 text-white focus:outline-none focus:ring focus:ring-blue-500" required />
+        <button type="submit" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded">Add Quote</button>
+      </form>
+    </section>
+  </div>
 
 </body>
+
     <script src="{{ url_for('static', filename='script.js') }}"></script>
+
 </html>
